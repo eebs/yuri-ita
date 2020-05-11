@@ -1,14 +1,18 @@
 .movie-card {
-  background-color: $white;
-  border-radius: $radius;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.movie-card__text {
   display: grid;
+  flex: 1;
   grid:
-    'title       status' auto
-    'tagline     ....'   auto
+    'title      title'  min-content
+    'status     status' min-content
     /1fr         min-content;
   grid-gap: $spacing-sm;
-  margin-bottom: $spacing-md;
-  padding: $spacing-md;
+  padding: $spacing-sm;
 }
 
 .movie-card__title {
@@ -24,4 +28,12 @@
 
 .movie-card__status {
   grid-area: status;
+}
+
+.movie-card__image {
+  background-color: $gray-200;
+  border-radius: $radius;
+  grid-area: image;
+  height: 32rem;
+  width: 100%;
 }

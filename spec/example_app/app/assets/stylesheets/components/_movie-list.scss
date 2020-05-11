@@ -1,5 +1,7 @@
 .movie-list {
-  background-color: $gray-200;
-  padding: $spacing-md;
+  align-items: stretch;
+  display: grid;
+  grid-gap: $spacing-lg $spacing-md;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   width: 100%;
 }

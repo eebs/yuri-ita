@@ -6,10 +6,15 @@
 }
 
 .index-search input {
-  border: 0;
+  border: 1px solid $gray-300;
   border-radius: $radius;
   flex: 1;
   margin-left: $spacing-md;
   min-width: 0;
   padding: $spacing-sm;
+
+  &:focus {
+    border-color: $action-color;
+    box-shadow: 0 3px 12px $gray-200;
+  }
 }

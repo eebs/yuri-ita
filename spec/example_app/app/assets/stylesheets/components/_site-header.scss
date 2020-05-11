@@ -1,7 +1,8 @@
 .site-header {
-  background: $gray-800;
-  color: $white;
+  background-color: $gray-100;
+  border-bottom: 1px solid $gray-300;
   height: $site-header-height;
+  padding: 0 $spacing-lg;
 }
 
 .site-header__content {
@@ -11,6 +12,9 @@
   justify-content: space-between;
   margin: 0 auto;
   max-width: $container-width;
-  padding: $spacing-md;
   white-space: nowrap;
+}
+
+.site-header__logo {
+  margin-right: $spacing-md;
 }

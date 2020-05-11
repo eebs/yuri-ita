@@ -1,8 +1,9 @@
 <div class="site-header">
   <div class="site-header__content">
-    <h1>Top Movies</h1>
+    <%= image_tag "logo.svg", class: "site-header__logo" %>
 
     <%= form_for table.search, url: movies_path, method: :get, html: { class: "index-search" } do |form| %>
+      <%= form.label "Search" %>
       <%= form.text_field :query, size: 50, autocomplete: "off" %>
     <% end %>
   </div>
@@ -28,13 +29,13 @@
       <%= render "options", options: table.options_for(:adult) %>
     </div>
 
-    <div class="movie-list">
+    <main>
       <% if table.filtered? %>
         <%= link_to "Clear current search, filters, and sort", movies_path, class: "clear-filter-link"  %>
       <% end %>
-      <ul>
+      <ul class="movie-list">
         <%= render(table.items) || render("empty_index") %>
       </ul>
-    </div>
+    </main>
   </div>
 </div>

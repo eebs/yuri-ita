@@ -1,12 +1,11 @@
 .filter-list {
   align-items: flex-start;
-  background-color: $gray-200;
   display: flex;
   flex-direction: column;
-  order: 1;
-  padding: $spacing-md;
+  max-width: 30rem;
+  min-width: 20rem;
   padding-left: 0;
-  width: 22rem;
+  width: 25vw;
 }
 
 .filter-list__link {
@@ -22,7 +21,10 @@
 }
 
 .filter-list__heading {
+  font-size: $font-size-small;
+  font-weight: $font-weight-bold;
   margin-bottom: $spacing-sm;
+  text-transform: uppercase;
 
   &:not(:first-child) {
     margin-top: $spacing-md;

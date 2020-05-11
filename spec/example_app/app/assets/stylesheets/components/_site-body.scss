@@ -1,12 +1,16 @@
 .site-body {
-  background-color: black;
   display: flex;
   flex: 1;
+  padding: 0 $spacing-lg;
 }
 
 .site-body__content {
   display: flex;
   flex: 1;
-  margin: 0 auto;
+  margin: $spacing-lg auto;
   max-width: $container-width;
+}
+
+main {
+  width: 100%;
 }
