@@ -1,7 +1,7 @@
 {
   "license": "MIT",
   "dependencies": {
-    "@rails/ujs": "^6.0.3",
+    "@rails/ujs": "^6.1.4",
     "@rails/webpacker": "5.2.1",
     "highlight.js": "^10.4.1",
     "stimulus": "^1.1.1"
